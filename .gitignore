@@ -85,3 +85,5 @@ crashlytics-build.properties
 =======
 /*.csproj
 >>>>>>> 3eae30823a5acca8e67a5b624185ce28800cafca
+/.vs
+/.vscode
