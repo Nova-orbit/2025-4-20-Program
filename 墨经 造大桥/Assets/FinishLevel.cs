@@ -11,6 +11,7 @@ public class Finish : MonoBehaviour
         if(collision.gameObject.name == "»õÎï" && !levelCompleted)
         {
             levelCompleted = true;
+            Global.StartButtonOn =false;
             Invoke("FinishLevel", 0.1f);
         }
     }

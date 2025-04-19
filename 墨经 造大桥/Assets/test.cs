@@ -5,6 +5,7 @@ using System.Drawing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class test : MonoBehaviour
 {
@@ -30,6 +31,12 @@ public class test : MonoBehaviour
             if (Global.DestoryMode)DestoryM();
             if (Global.AdjustMode)Adjust();
             Big();
+            
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Global.StartButtonOn = false;
         }
 
         void Adjust()
