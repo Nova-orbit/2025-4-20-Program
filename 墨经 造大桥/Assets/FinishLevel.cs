@@ -17,6 +17,6 @@ public class Finish : MonoBehaviour
     }
     private void FinishLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Chooselevel");
     }
 }
